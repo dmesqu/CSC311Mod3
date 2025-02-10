@@ -19,7 +19,24 @@ public class HelloController {
     private TextField tfAmount;
 
     @FXML
-    protected void calc() {
+    private TextField tfMonthly;
 
+    @FXML
+    private TextField tfTotal;
+
+    @FXML
+    protected void calc() {
+        double loanAmount = Double.parseDouble(tfAmount.getText());
+        double intrestRate = Double.parseDouble(tfAnnual.getText());
+        double years = Double.parseDouble(tfYears.getText());
+
+        double monthlyRate = intrestRate / 100 / 12;
+        double numOfPayments = years * 12;
+
+        double monthlyPayment = (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate,-numOfPayments));
+        double totalPayment = monthlyPayment * numOfPayments;
+
+        tfMonthly.setText(monthlyPayment +"");
+        tfTotal.setText(totalPayment +"");
     }
 }

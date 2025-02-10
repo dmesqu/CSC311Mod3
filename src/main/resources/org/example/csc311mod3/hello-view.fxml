@@ -15,8 +15,8 @@
       <Button fx:id="btnCalc" layoutX="210.0" layoutY="224.0" mnemonicParsing="false" onAction="#calc" text="Calculate" />
       <TextField fx:id="tfAnnual" layoutX="168.0" layoutY="47.0" />
       <TextField fx:id="tfYears" layoutX="168.0" layoutY="82.0" />
-      <TextField fx:id="tfAmmount" layoutX="168.0" layoutY="118.0" />
-      <TextField editable="false" layoutX="168.0" layoutY="154.0" />
-      <TextField editable="false" layoutX="168.0" layoutY="190.0" />
+      <TextField fx:id="tfAmount" layoutX="168.0" layoutY="118.0" />
+      <TextField fx:id="tfMonthly" editable="false" layoutX="168.0" layoutY="154.0" />
+      <TextField fx:id="tfTotal" editable="false" layoutX="168.0" layoutY="190.0" />
    </children>
 </AnchorPane>
