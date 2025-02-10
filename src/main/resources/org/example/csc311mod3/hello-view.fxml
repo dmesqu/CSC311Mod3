@@ -5,7 +5,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.csc311mod3.HelloController">
    <children>
       <Label layoutX="40.0" layoutY="51.0" text="Annual Intrest Rate:" />
@@ -13,7 +12,7 @@
       <Label layoutX="40.0" layoutY="122.0" text="Loan Amount: " />
       <Label layoutX="40.0" layoutY="158.0" text="Monthly Payment: " />
       <Label layoutX="40.0" layoutY="194.0" text="Total Payment: " />
-      <Button fx:id="btnCalc" layoutX="210.0" layoutY="224.0" mnemonicParsing="false" text="Calculate" />
+      <Button fx:id="btnCalc" layoutX="210.0" layoutY="224.0" mnemonicParsing="false" onAction="#calc" text="Calculate" />
       <TextField fx:id="tfAnnual" layoutX="168.0" layoutY="47.0" />
       <TextField fx:id="tfYears" layoutX="168.0" layoutY="82.0" />
       <TextField fx:id="tfAmmount" layoutX="168.0" layoutY="118.0" />
